@@ -1,0 +1,36 @@
+version: "3.1"
+
+stories:
+
+- story: select account
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: withdraw_money
+  - action: utter_ask_account
+  - intent: select_account
+  - action: action_account
+
+- story: select monto
+  steps:
+  - action: utter_ask_monto
+  - intent: select_monto
+  - action: action_monto
+
+- story: response monto 1
+  steps:
+  - action: utter_ask_sucursal
+  - intent: select_sucursal
+  - action: action_sucursal
+
+- story: response monto 2
+  steps:
+  - action: utter_confirmation
+  - intent: affirm
+  - action: utter_great
+
+- story: response monto 3
+  steps:
+  - action: utter_confirmation
+  - intent: deny
+  - action: utter_ask_monto

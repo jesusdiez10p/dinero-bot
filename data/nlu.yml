@@ -1,0 +1,67 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hola
+    - buenos dias
+    - buenas tardes
+    - buenas noches
+
+- intent: goodbye
+  examples: |
+    - adios
+    - nos vemos
+    - hasta luego
+
+- intent: affirm
+  examples: |
+    - sí
+    - si
+    - correcto
+    - afirmativo
+
+- intent: deny
+  examples: |
+    - no
+    - incorrecto
+    - negativo
+
+- intent: bot_challenge
+  examples: |
+    - eres un robot?
+
+- intent: withdraw_money
+  examples: |
+    - quiero retirar dinero
+    - quisiera retirar dinero
+    - me gustaria retirar dinero
+
+- intent: select_account
+  examples: |
+    - cuenta [debito](cuenta)
+    - cuenta [credito](cuenta)
+    - [debito](cuenta)
+    - [credito](cuenta)
+    - mi cuenta de [debito](cuenta)
+    - mi cuenta de [credito](cuenta)
+
+- intent: select_monto
+  examples: |
+    - [1000](monto) soles
+    - [5000](monto) soles
+    - [100](monto) soles
+    - [500](monto) soles
+    - [200](monto) soles
+    - [1000](monto)
+    - [5000](monto)
+    - [100](monto)
+    - [500](monto)
+    - [200](monto)
+
+- intent: select_sucursal
+  examples: |
+    - Sucursal [La Molina](sucursal)
+    - Sucursal [Principal](sucursal)
+    - [La Molina](sucursal)
+    - [Principal](sucursal)

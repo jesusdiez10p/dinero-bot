@@ -1,0 +1,54 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - withdraw_money
+  - select_account
+  - select_monto
+  - select_sucursal
+
+entities:
+  - cuenta
+  - monto
+  - sucursal
+
+actions:
+- action_account
+- action_monto
+- action_sucursal
+
+responses:
+  utter_greet:
+  - text: "Hola, en que te puedo ayudar?"
+
+  utter_goodbye:
+  - text: "Que tengas buen día"
+
+  utter_ask_account:
+  - text: "Quisieras retirar de tu cuenta de crédito o de débito?"
+
+  utter_debito:
+  - text: "Desafortunadamente, no puedes transferir directamente desde tu cuenta de débito por temas de seguridad"
+
+  utter_ask_monto:
+  - text: "Cuanto desea retirar?"
+
+  utter_ask_sucursal:
+  - text: "Disculpa, pero debes acercarte a un cajero para retirar montos mayores a 1000 soles. A que sucursal desea ir hoy? \n - Sucursal La Molina \n - Sucursal Principal"
+
+  utter_confirmation:
+  - text: "Me podrías confirmar que deseas retirar {monto} de tu cuenta de crédito. Es correcto?"
+
+  utter_great:
+  - text: "Genial, acabo de transferir su dinero a la cuenta de YAPE"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

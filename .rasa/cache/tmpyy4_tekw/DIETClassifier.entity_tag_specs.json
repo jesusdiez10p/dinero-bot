@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-cuenta",
+      "2": "I-cuenta",
+      "3": "L-cuenta",
+      "4": "U-cuenta",
+      "5": "B-monto",
+      "6": "I-monto",
+      "7": "L-monto",
+      "8": "U-monto",
+      "9": "B-sucursal",
+      "10": "I-sucursal",
+      "11": "L-sucursal",
+      "12": "U-sucursal",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-cuenta": 1,
+      "I-cuenta": 2,
+      "L-cuenta": 3,
+      "U-cuenta": 4,
+      "B-monto": 5,
+      "I-monto": 6,
+      "L-monto": 7,
+      "U-monto": 8,
+      "B-sucursal": 9,
+      "I-sucursal": 10,
+      "L-sucursal": 11,
+      "U-sucursal": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]
